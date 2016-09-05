@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang ="en">
+  <head>
+
+    <title>Day07</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    table {
+
+    border: 1px solid gray;
+    padding: 5em;
+
+}
+    form{
+      max-width: 500px;
+     height: 300px;
+     background-color: powderblue;
+
+      border: 1px solid black;
+      padding :10px;
+      margin-bottom :20px;
+    }
+    </style>
+  </head>
+
+   <body>
+     <div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-6" style="background-color:lavender;">
+      <h3> To Do LIst</h3>
+      <form method="post">
+        <label for="task">Task/Activity       :
+          <input  type="text" id = "task" name="task" value="task" >
+        </label><br /><br />
+        <label for="Priority">Priority        :
+          <select list = "priority" name="priority">Priority
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+         </select>
+       </label><br /><br />
+
+         <label for="date">Due Date             :
+             <input  type="date" id = "Date" name="Date" value="09/05/2016" >
+         </label><br /><br />
+         <label for="status">Status             :
+           <select list = "status" name="status">Priority
+                     <option value="Not Started">Not Started</option>
+                     <option value="In Progress">In Progress</option>
+                     <option value="Completed">Completed</option>
+          </select>
+         </label><br /><br />
+
+         <input  type="submit" id = "submit" name="submit" value="submit">
+    </form><br /><br />
+    <button id ="btn1" type ="button" name ="display" value= "button">Display</button><br /><br />
+    <button id ="btn2" type ="button" name ="remove" value= "button">Remove Task</button><br /><br />
+     <button id ="btn3" type ="button" name ="Update" value= "button">Update</button><br /><br />
+    </div>
+    <div class="col-sm-6" style="background-color:lavender;">
+      <aside class ="rightbar">
+        <table id = "table" class="table table-striped" >
+          <thead>
+            <tr>
+              <th>Task</th>
+              <th>Priority</th>
+              <th>Duedate</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+        </table>
+
+      </aside>
+    </div>
+  </div>
+</div>
+
+
+
+   <script src="assignment.js"></script>
+
+
+</form>
+ </body>
+   </html>
